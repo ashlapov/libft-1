@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/17 16:38:36 by kgavrilo         ###   ########.fr       */
+/*   Created: 2019/09/17 16:34:04 by kgavrilo          #+#    #+#             */
+/*   Updated: 2019/09/17 16:39:55 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER_FILE_NAME
-#define HEADER_FILE_NAME
-
-#include <string.h>
-
-int		ft_strlen(const char *s);
-char	*ft_strdup(const char *s1);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isalpha(int c);
-int		ft_isalnum(int c);
-int		ft_isprint(int c);
-#endif
+int		ft_isprint(int c)
+{
+	return (c >= 32 && c <= 126);
+}
