@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/17 15:38:05 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/09/17 15:39:21 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,4 @@
 int		ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
 int		ft_isascii(int c);
-int		isdigit(int c);
+int		ft_isdigit(int c);
