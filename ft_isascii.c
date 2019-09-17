@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/17 15:34:26 by kgavrilo         ###   ########.fr       */
+/*   Created: 2019/09/17 15:28:51 by kgavrilo          #+#    #+#             */
+/*   Updated: 2019/09/17 15:33:09 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-int		ft_strlen(const char *s);
-char	*ft_strdup(const char *s1);
-int		ft_isascii(int c);
+int		ft_isascii(int c)
+{
+	return (c >= 0 && c <= 128);
+}
