@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/17 15:38:05 by kgavrilo         ###   ########.fr       */
+/*   Created: 2019/09/17 15:36:25 by kgavrilo          #+#    #+#             */
+/*   Updated: 2019/09/17 15:37:25 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-int		ft_strlen(const char *s);
-char	*ft_strdup(const char *s1);
-int		ft_isascii(int c);
-int		isdigit(int c);
+int		isdigit(int c)
+{
+	return (c >= 0 && c <= 9);
+}
