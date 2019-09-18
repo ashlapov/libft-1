@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/17 16:45:52 by kgavrilo         ###   ########.fr       */
+/*   Created: 2019/09/17 16:42:35 by kgavrilo          #+#    #+#             */
+/*   Updated: 2019/09/17 18:25:43 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER_FILE_NAME
-#define HEADER_FILE_NAME
+#include "libft.h"
 
-#include <string.h>
+char	*ft_strcpy(char *dst, const char *src)
+{
+	int		len;
 
-int		ft_strlen(const char *s);
-char	*ft_strdup(const char *s1);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isalpha(int c);
-int		ft_isalnum(int c);
-int		ft_isprint(int c);
-char	*ft_strcpy(char *dst, const char *src);
-#endif
+	len = 0;
+	while (src[len] != '\0')
+		len++;
+	dst[--len] = '\0';
+	while (len >= 0)
+	{
+		dst[len] = src[len];
+		len--;
+	}
+	return (dst);
+}
