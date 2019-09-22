@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/21 15:20:06 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/09/21 16:50:19 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 void	ft_putnbr(int n);
+void	ft_striter(char *s, void (*f)(char *));
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 
 #endif
