@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/21 16:50:19 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/09/23 13:17:46 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,7 @@ void	ft_putnbr(int n);
 void	ft_striter(char *s, void (*f)(char *));
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strncpy(char * dst, const char * src, size_t len);
+int		ft_atoi(const char *str);
 
 #endif
