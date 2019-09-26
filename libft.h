@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/26 09:18:48 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/09/26 10:18:50 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ void	*ft_memset(void *b, int c, size_t len);
 char	*ft_strstr(const char *haystack, const char *needle);
 int		strncmp(const char *s1, const char *s2, size_t n);
 int		ft_strcmp(const char *s1, const char *s2);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 #endif
