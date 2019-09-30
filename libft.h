@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/29 10:31:24 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/09/29 21:45:02 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
 size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
+void	ft_memdel(void **ap);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+void	ft_strclr(char *s);
+void	ft_strdel(char **as);
+int		ft_strequ(char const *s1, char const *s2);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strnew(size_t size);
 
 #endif
