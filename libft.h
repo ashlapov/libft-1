@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/29 21:45:02 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/01 15:27:55 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,12 @@ int		ft_strequ(char const *s1, char const *s2);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strnew(size_t size);
+
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
 
 #endif
