@@ -6,13 +6,13 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/23 17:51:47 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/23 17:58:52 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 10:07:15 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char const *s, int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
 	int	i;
 
