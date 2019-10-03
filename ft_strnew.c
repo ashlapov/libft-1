@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 21:12:21 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/29 21:20:04 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 14:44:18 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnew(size_t size)
 	result = (char *)malloc(sizeof(char) * size);
 	if (result == NULL)
 		return (NULL);
-	while (size >= 0)
+	while (size > 0)
 	{
 		result[size] = '\0';
 		size--;
