@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 13:56:07 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/30 13:58:34 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 14:42:00 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	int	i;
+	unsigned int	i;
 
 	if (s1 && s2 && n)
 	{
