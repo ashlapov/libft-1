@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 10:54:31 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/30 12:58:09 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 11:02:49 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	str1 = (const unsigned char *)s1;
 	str2 = (const unsigned char *)s2;
-
 	if (s1 == s2 || n == 0)
 		return (0);
 	while (n--)

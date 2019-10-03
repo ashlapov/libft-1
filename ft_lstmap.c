@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.us.org>         +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/01 22:49:46 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/01 22:49:46 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 10:58:44 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
