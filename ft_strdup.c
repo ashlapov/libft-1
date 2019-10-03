@@ -6,12 +6,11 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 12:17:05 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/17 15:33:18 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 10:09:11 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *s1)
 {
