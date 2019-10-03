@@ -1,8 +1,0 @@
-ft_strsplit
-ft_itoa
-===========
-ft_lstdelone
-ft_lstdel
-ft_lstadd
-ft_lstiter
-ft_lstmap
