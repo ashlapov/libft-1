@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 13:15:48 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 11:13:20 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 12:13:31 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 int		ft_toupper(int c)
 {
-	unsigned char	i;
-
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	return (c);

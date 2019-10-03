@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 14:45:14 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 11:35:54 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 12:13:17 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	unsigned int	i;
 
 	if (n == 0)
 		return (0);

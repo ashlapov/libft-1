@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/23 19:28:31 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/23 19:48:30 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 12:07:09 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,5 @@ void	*ft_memset(void *b, int c, size_t len)
 		if (len)
 			ret++;
 	}
+	return (ret);
 }

@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 09:07:37 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/29 10:50:25 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/03 12:07:41 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,5 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		((char *)dst)[i] = ((char *)src)[i];
 		i++;
 	}
+	return (dst);
 }
