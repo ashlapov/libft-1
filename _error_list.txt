@@ -3,7 +3,5 @@
 >>>> 01_part2_ft_strnequ.spec.c -- [FAIL] FF.. [FAIL] test1 -> ft_strnequ("ededeqdf", "", 0) == 1
 >>>> 01_part2_ft_strmapi.spec.c -- [FAIL] F [FAIL] test1 -> strcmp(dst, "edcba") == 0
 >>>> 00_part1_ft_memmove.spec.c -- [FAIL] F. [FAIL] unittest1 -> strcmp(testA1, "aabcde") == 0
->>>> 01_part2_ft_strsub.spec.c --- [FAIL] .F. [FAIL] test2 -> strcmp(ft_strsub(str, 8, 8), "je serai") == 0
->>>> 00_part1_ft_memset.spec.c --- [FAIL] .F. [FAIL] unittest2 -> memcmp(__builtin___memset_chk (strdup("abcd"), 'A', 5, __builtin_object_size (st...
 >>>> 00_part1_ft_strnstr.spec.c -- [FAIL] S..S [SEGV] unittest1 -> strcmp(ft_strnstr(buf, "", 6), buf) == 0
 >>>> 00_part1_ft_memcmp.spec.c --- [FAIL] .....F [FAIL] unittest6 -> ft_memcmp("\200", "\0", 1) > 0
