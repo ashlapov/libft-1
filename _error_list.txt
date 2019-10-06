@@ -1,4 +1,3 @@
->>>> 00_part1_ft_strncat.spec.c -- [FAIL] F. [FAIL] unittest1 -> strcmp(buf, "To be or not") == 0
 >>>> 00_part1_ft_strstr.spec.c --- [FAIL] ...F.F.F.F [FAIL] test_num4 -> ft_strstr(buf, "") == strstr(buf, "")
 >>>> 01_part2_ft_strnequ.spec.c -- [FAIL] FF.. [FAIL] test1 -> ft_strnequ("ededeqdf", "", 0) == 1
 >>>> 01_part2_ft_strmapi.spec.c -- [FAIL] F [FAIL] test1 -> strcmp(dst, "edcba") == 0

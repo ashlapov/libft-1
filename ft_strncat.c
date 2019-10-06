@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 10:21:53 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 10:15:27 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/06 11:42:10 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,18 @@
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	ft_strncpy(s1 + ft_strlen(s1), s2, n);
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	j = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (j < n && s2[j] != '\0')
+	{
+		s1[i + j] = s2[j];
+		j++;
+	}
+	s1[i + j] = '\0';
 	return (s1);
 }
