@@ -1,5 +1,4 @@
 >>>> 00_part1_ft_strstr.spec.c --- [FAIL] ...F.F.F.F [FAIL] test_num4 -> ft_strstr(buf, "") == strstr(buf, "")
->>>> 01_part2_ft_strnequ.spec.c -- [FAIL] FF.. [FAIL] test1 -> ft_strnequ("ededeqdf", "", 0) == 1
 >>>> 01_part2_ft_strmapi.spec.c -- [FAIL] F [FAIL] test1 -> strcmp(dst, "edcba") == 0
 >>>> 00_part1_ft_memmove.spec.c -- [FAIL] F. [FAIL] unittest1 -> strcmp(testA1, "aabcde") == 0
 >>>> 00_part1_ft_strnstr.spec.c -- [FAIL] S..S [SEGV] unittest1 -> strcmp(ft_strnstr(buf, "", 6), buf) == 0
