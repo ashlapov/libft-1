@@ -23,9 +23,6 @@ ft_strdup:     [OK] [OK] [OK] [KO] [FAILED] [OK] [OK]
 ft_strlcat:    [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
 [fail]: your strlcat does not work with a size of 0
 
-ft_strstr:     [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-[fail]: your strstr does not work with basic input
-
 ft_strnstr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [FAILED] [OK] [OK] [OK] [OK] [OK]
 [fail]: your strnstr does not work with empty strings
 [fail]: your strnstr does not work with empty strings and 0 length
