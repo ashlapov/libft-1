@@ -1,11 +1,7 @@
->>>> 00_part1_ft_strstr.spec.c --- [FAIL] .....F...F [FAIL] test_num6 -> ft_strstr(buf2, "ozaraboze") == strstr(buf2, "ozaraboze")
 >>>> 00_part1_ft_strnstr.spec.c -- [FAIL] S..S [SEGV] unittest1 -> strcmp(ft_strnstr(buf, "", 6), buf) == 0
 >>>> 00_part1_ft_memmove.spec.c -- [FAIL] F. [FAIL] unittest1 -> strcmp(testA1, "aabcde") == 0
 
 ===========================================================================================
-
-ft_memcpy:     [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH]
-[crash]: your memcpy does not behave well with NULL as both params with size
 
 ft_memccpy:    [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] [NO CRASH]
 [fail]: your memccpy doesn't cast the stop-character into unsigned char
@@ -16,10 +12,6 @@ ft_memmove:    [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [NO CRASH] 
 [fail]: your memmove does not support the overlap (test 1)
 [no crash]: your memmove does not segfault when null params is sent
 
-ft_strdup:     [OK] [OK] [OK] [KO] [FAILED] [OK] [OK]
-[KO]: your strdup did not allocate the good size so the \0 test may be false
-[fail]: your strdup does not add \0 at the end of the string
-
 ft_strlcat:    [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
 [fail]: your strlcat does not work with a size of 0
 
@@ -27,15 +19,8 @@ ft_strnstr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [FAILED] [OK] [OK] [O
 [fail]: your strnstr does not work with empty strings
 [fail]: your strnstr does not work with empty strings and 0 length
 
-ft_strnew:     [OK] [FAILED] [FAILED] [OK]
-[fail]: your strnew does not set allocated mem to 0
-[fail]: your strnew did not allocate the good size so the \0 test can be false
-
-ft_strmapi:    [OK] [OK] [OK] [FAILED] [OK] [M-^_M-^R• ]
-[fail]: your strmapi does not allocate the good size so the \0 test may be false
-
-ft_strsub:     [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [M-^_M-^R• ]
-[fail]: your strsub did not allocate the good size so the \0 test may be false
-
 ft_putchar:    [OK] [OK] [KO]
 [KO]: your putchar does not work with unicode
+
+ft_putchar_fd: [OK] [OK] [KO]
+[KO]: your putchar_fd does not work with unicode
