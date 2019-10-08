@@ -1,6 +1,6 @@
 >>>> 00_part1_ft_strstr.spec.c --- [FAIL] .....F...F [FAIL] test_num6 -> ft_strstr(buf2, "ozaraboze") == strstr(buf2, "ozaraboze")
->>>> 00_part1_ft_memmove.spec.c -- [FAIL] F. [FAIL] unittest1 -> strcmp(testA1, "aabcde") == 0
 >>>> 00_part1_ft_strnstr.spec.c -- [FAIL] S..S [SEGV] unittest1 -> strcmp(ft_strnstr(buf, "", 6), buf) == 0
+>>>> 00_part1_ft_memmove.spec.c -- [FAIL] F. [FAIL] unittest1 -> strcmp(testA1, "aabcde") == 0
 
 ===========================================================================================
 
@@ -34,13 +34,9 @@ ft_atoi:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [KO] 
 [KO]: your atoi does not work with over long max value
 [KO]: your atoi does not work with over long min value
 
-ft_isascii:    [FAILED]
-[fail]: your isascii just doesn't work, REALLY ?!
-
 ft_strnew:     [OK] [FAILED] [FAILED] [OK]
 [fail]: your strnew does not set allocated mem to 0
 [fail]: your strnew did not allocate the good size so the \0 test can be false
-
 
 ft_strmapi:    [OK] [OK] [OK] [FAILED] [OK] [M-^_M-^R• ]
 [fail]: your strmapi does not allocate the good size so the \0 test may be false

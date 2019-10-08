@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 15:28:51 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 10:03:13 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/07 19:32:30 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int		ft_isascii(int c)
 {
-	return (c >= 0 && c <= 128);
+	return (c >= 0 && c < 128);
 }
