@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/22 14:35:17 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 11:06:55 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/07 20:51:42 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,10 @@ int		ft_atoi(const char *str)
 		++str;
 	while (*str && *str >= '0' && *str <= '9')
 	{
+		if (ret > 469762049 && negative == 1)
+			return (-1);
+		else if (ret > 469762049 && negative == -1)
+			return (0);
 		ret = (ret * 10) + *str - '0';
 		++str;
 	}

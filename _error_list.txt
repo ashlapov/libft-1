@@ -30,10 +30,6 @@ ft_strnstr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [FAILED] [OK] [OK] [O
 [fail]: your strnstr does not work with empty strings
 [fail]: your strnstr does not work with empty strings and 0 length
 
-ft_atoi:       [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [KO] [KO] [OK]
-[KO]: your atoi does not work with over long max value
-[KO]: your atoi does not work with over long min value
-
 ft_strnew:     [OK] [FAILED] [FAILED] [OK]
 [fail]: your strnew does not set allocated mem to 0
 [fail]: your strnew did not allocate the good size so the \0 test can be false
