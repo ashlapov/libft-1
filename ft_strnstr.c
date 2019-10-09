@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 09:21:26 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/08 18:16:18 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/08 20:20:43 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t		needle_len;
+	size_t	needle_len;
 	char	*result;
 
 	result = (char *)haystack;
