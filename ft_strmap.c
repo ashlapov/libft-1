@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 13:40:47 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 15:14:10 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/09 14:29:23 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*result;
 	int		i;
 
+	if (!s || !f)
+		return (NULL);
 	result = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (result == NULL)
 		return (NULL);

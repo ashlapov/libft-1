@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 13:58:49 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/07 22:17:46 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/09 14:33:07 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	char	*result;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	result = (char *)malloc(sizeof(char) * (len + 1));
 	if (result == NULL)
 		return (NULL);

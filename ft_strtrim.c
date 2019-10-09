@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.h                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 14:03:59 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/30 14:18:59 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/09 14:36:19 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s)
 	int		len;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	len = ft_strlen(s);
 	while (s[len - 1] == ' ' || s[len - 1] == '\t' || s[len - 1] == '\n')
 		len--;

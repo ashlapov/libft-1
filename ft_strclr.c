@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 20:56:05 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 14:39:25 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/09 14:37:47 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_strclr(char *s)
 {
 	int	len;
 
+	if (!s)
+		return ;
 	len = ft_strlen(s);
 	while (len >= 0)
 	{
