@@ -1,4 +1,3 @@
->>>> 00_part1_ft_strnstr.spec.c -- [FAIL] S..S [SEGV] unittest1 -> strcmp(ft_strnstr(buf, "", 6), buf) == 0
 >>>> 00_part1_ft_memmove.spec.c -- [FAIL] F. [FAIL] unittest1 -> strcmp(testA1, "aabcde") == 0
 
 ===========================================================================================
@@ -10,10 +9,6 @@ ft_memccpy:    [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] 
 
 ft_strlcat:    [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
 [fail]: your strlcat does not work with a size of 0
-
-ft_strnstr:    [OK] [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [FAILED] [OK] [OK] [OK] [OK] [OK]
-[fail]: your strnstr does not work with empty strings
-[fail]: your strnstr does not work with empty strings and 0 length
 
 ft_putchar:    [OK] [OK] [KO]
 [KO]: your putchar does not work with unicode
