@@ -1,17 +1,10 @@
->>>> 00_part1_ft_memmove.spec.c -- [FAIL] F. [FAIL] unittest1 -> strcmp(testA1, "aabcde") == 0
-
-===========================================================================================
-
-ft_memccpy:    [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] [NO CRASH]
-[fail]: your memccpy doesn't cast the stop-character into unsigned char
-[no crash]: your memccpy does not segv with NULL on first params
-[no crash]: your memccpy does not segv with NULL on second params
-
-ft_strlcat:    [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
-[fail]: your strlcat does not work with a size of 0
-
-ft_putchar:    [OK] [OK] [KO]
-[KO]: your putchar does not work with unicode
-
-ft_putchar_fd: [OK] [OK] [KO]
-[KO]: your putchar_fd does not work with unicode
+Test [atoi] : Error Line 1171, Funct uf_test_atoi FAIL
+Test [strdel] : Segmentation Fault
+Test [strclr] : Segmentation Fault
+Test [striter] : Segmentation Fault
+Test [strmap] : Segmentation Fault
+Test [strmapi] : Segmentation Fault
+Test [strsub] : Segmentation Fault
+Test [strjoin] : Segmentation Fault
+Test [strsplit] : Segmentation Fault
+Test [strtrim] : Segmentation Fault

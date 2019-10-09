@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 10:41:23 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 10:14:20 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/08 20:06:44 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	j;
 
 	i = 0;
+	if (!dstsize)
+		return (i);
 	while (dst[i] != '\0' && i < dstsize)
 		i++;
 	j = i;
