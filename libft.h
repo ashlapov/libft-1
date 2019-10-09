@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/08 20:41:45 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/09 15:17:23 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ typedef struct		s_list
 int					ft_abs(int n);
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
+int					ft_count_words(const char *str, char c);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
@@ -84,5 +85,4 @@ char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
-
 #endif
