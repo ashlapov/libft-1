@@ -8,10 +8,6 @@ ft_memccpy:    [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] 
 [no crash]: your memccpy does not segv with NULL on first params
 [no crash]: your memccpy does not segv with NULL on second params
 
-ft_memmove:    [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [NO CRASH] [OK] [OK] [OK]
-[fail]: your memmove does not support the overlap (test 1)
-[no crash]: your memmove does not segfault when null params is sent
-
 ft_strlcat:    [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK]
 [fail]: your strlcat does not work with a size of 0
 
