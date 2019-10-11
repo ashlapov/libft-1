@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/03 09:58:48 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 11:37:38 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/10/10 19:55:13 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,18 @@ static void	itoa_isnegative(int *n, int *negative)
 
 char		*ft_itoa(int n)
 {
-	int		tmpn;
+	int		tmp;
 	int		len;
 	int		negative;
 	char	*str;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	tmpn = n;
+	tmp = n;
 	len = 2;
 	negative = 0;
 	itoa_isnegative(&n, &negative);
-	while (tmpn /= 10)
+	while (tmp /= 10)
 		len++;
 	len += negative;
 	if ((str = (char*)malloc(sizeof(char) * len)) == NULL)
