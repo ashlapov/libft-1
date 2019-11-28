@@ -6,17 +6,23 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 16:08:43 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/11/15 14:15:41 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 19:51:21 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Check remainder
+*/
+
 char			*check_rmndr(char *rmndr, char **line)
 {
 	char	*p_nl;
+	char	*tmp;
 
 	p_nl = NULL;
+	tmp = *line;
 	if (rmndr)
 		if ((p_nl = ft_strchr(rmndr, '\n')))
 		{
@@ -31,8 +37,15 @@ char			*check_rmndr(char *rmndr, char **line)
 		}
 	else
 		*line = ft_strnew(1);
+	ft_strdel(&tmp);
 	return (p_nl);
 }
+
+/*
+** Check remainder from previous operation.
+** Tries to find '\n', replace it with '\0',
+** save part of the string to remainder and write line
+*/
 
 int				get_line(const int fd, char **line, char **rmndr)
 {
@@ -40,6 +53,7 @@ int				get_line(const int fd, char **line, char **rmndr)
 	int				n;
 	char			*p_nl;
 	char			*tmp;
+	char			*tmp_rmndr;
 
 	if (read(fd, buf, 0) < 0)
 		return (-1);
@@ -50,7 +64,9 @@ int				get_line(const int fd, char **line, char **rmndr)
 		if ((p_nl = ft_strchr(buf, '\n')))
 		{
 			*p_nl = '\0';
+			tmp_rmndr = *rmndr;
 			*rmndr = ft_strdup(++p_nl);
+			ft_strdel(&tmp_rmndr);
 		}
 		tmp = *line;
 		if (!(*line = ft_strjoin(*line, buf)) || n < 0)
@@ -59,6 +75,10 @@ int				get_line(const int fd, char **line, char **rmndr)
 	}
 	return (n || p_nl || ft_strlen(*line)) ? 1 : 0;
 }
+
+/*
+** Function creates new struct instance for linked list
+*/
 
 t_fd_list		*new_list(int fd)
 {
@@ -70,6 +90,12 @@ t_fd_list		*new_list(int fd)
 	new->next = NULL;
 	return (new);
 }
+
+/*
+** Main function, tries to find file descriptor (fd)
+** in linked list or create new one.
+** We use them to to manage multiple file descriptor.
+*/
 
 int				get_next_line(const int fd, char **line)
 {
