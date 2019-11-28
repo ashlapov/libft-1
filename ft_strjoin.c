@@ -6,11 +6,16 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 20:37:52 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/09 15:05:00 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 21:54:52 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Allocates and returns a “fresh” string ending with "\0",
+** result of the concatenation of s1 and s2
+*/
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

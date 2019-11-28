@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 13:56:07 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/06 20:40:42 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 22:01:25 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Lexicographical comparison between s1 and s2 up to n characters
+** or until a ’\0’ is reached. If the 2 strings are identical,
+** the function returns 1, or 0 otherwise.
+*/
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {

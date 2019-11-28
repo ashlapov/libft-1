@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 16:42:35 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/19 11:29:04 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 21:46:50 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copy strings
+*/
 
 char	*ft_strcpy(char *dst, const char *src)
 {

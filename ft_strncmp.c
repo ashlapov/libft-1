@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/24 14:45:14 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/04 13:13:44 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 22:00:01 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Compare strings
+*/
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

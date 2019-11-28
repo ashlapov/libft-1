@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 10:41:23 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/09 15:18:55 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 21:55:36 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Size-bounded string copying and concatenation
+*/
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

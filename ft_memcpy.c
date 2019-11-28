@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 19:34:46 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/08 19:46:18 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 21:31:56 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copy memory area
+*/
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

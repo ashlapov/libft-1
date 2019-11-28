@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 09:07:37 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/08 18:05:28 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 21:34:45 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copy byte string
+*/
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

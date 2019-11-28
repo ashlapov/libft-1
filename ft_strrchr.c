@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/21 16:42:14 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/09/21 17:03:31 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 22:06:23 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Locate locates the last occurrence of c in string
+*/
 
 char	*ft_strrchr(const char *s, int c)
 {

@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 19:19:20 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/09 19:19:35 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:48:41 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Test for any lower-case letters
+*/
 
 int		ft_islower(int c)
 {

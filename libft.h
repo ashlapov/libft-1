@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/11/15 14:14:59 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 22:14:42 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,14 @@ int						ft_isupper(int c);
 char					*ft_itoa(int n);
 void					ft_lstadd(t_list **alst, t_list *new);
 void					ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void					ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void					ft_lstdelone(t_list **alst,
+						void (*del)(void *, size_t));
 void					ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list					*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list					*ft_lstnew(void const *content, size_t content_size);
 void					*ft_memalloc(size_t size);
-void					*ft_memccpy(void *dst, const void *src, int c, size_t n);
+void					*ft_memccpy(void *dst, const void *src,
+						int c, size_t n);
 void					*ft_memchr(const void *s, int c, size_t n);
 int						ft_memcmp(const void *s1, const void *s2, size_t n);
 void					*ft_memcpy(void *dst, const void *src, size_t n);
@@ -83,7 +85,8 @@ size_t					ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t					ft_strlen(const char *s);
 size_t					ft_strnlen(const char *s, size_t maxlen);
 char					*ft_strmap(char const *s, char (*f)(char));
-char					*ft_strmapi(char const *s, char(*f)(unsigned int, char));
+char					*ft_strmapi(char const *s,
+						char(*f)(unsigned int, char));
 char					*ft_strncat(char *s1, const char *s2, size_t n);
 int						ft_strncmp(const char *s1, const char *s2, size_t n);
 char					*ft_strncpy(char *dst, const char *src, size_t len);
@@ -94,7 +97,8 @@ char					*ft_strnstr(const char *haystack, const char *needle,
 char					*ft_strrchr(const char *s, int c);
 char					**ft_strsplit(const char *str, char c);
 char					*ft_strstr(const char *haystack, const char *needle);
-char					*ft_strsub(char const *s, unsigned int start, size_t len);
+char					*ft_strsub(char const *s, unsigned int start,
+						size_t len);
 char					*ft_strtrim(char const *s);
 int						ft_tolower(int c);
 int						ft_toupper(int c);
