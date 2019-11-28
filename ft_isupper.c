@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 19:18:00 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/09 19:19:06 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:51:49 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Test for any upper-case letter
+*/
 
 int		ft_isupper(int c)
 {

@@ -6,11 +6,16 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/03 09:58:48 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/10 19:55:13 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:55:18 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Returns a “fresh” string ending with ’\0’ representing
+** the integer n given as argument.
+*/
 
 static void	itoa_isnegative(int *n, int *negative)
 {

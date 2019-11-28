@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 10:54:31 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/06 11:08:35 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 21:28:01 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Compare byte string
+*/
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/27 10:36:58 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/08 20:20:10 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 21:13:29 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Copy string until character found
+*/
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

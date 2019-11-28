@@ -6,11 +6,17 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 14:22:02 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/09 15:16:47 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 22:08:08 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Allocates and returns an array of "fresh" strings
+** (all ending with "\0", including the array itself)
+** obtained by spliting s using the character c as a delimiter.
+*/
 
 static	char	*ft_word(const char *str, char c, int *i)
 {

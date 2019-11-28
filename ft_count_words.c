@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 15:16:48 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/09 15:16:58 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:30:45 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Count words in str separated with c
+*/
 
 int		ft_count_words(const char *str, char c)
 {

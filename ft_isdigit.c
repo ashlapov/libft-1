@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgavrilo <kgavrilo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 15:36:25 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/03 21:20:26 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:47:59 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Test for a decimal digit character
+*/
 
 int		ft_isdigit(int c)
 {

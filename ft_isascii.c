@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 15:28:51 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/07 19:32:30 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 20:46:45 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Test for ASCII character
+*/
 
 int		ft_isascii(int c)
 {

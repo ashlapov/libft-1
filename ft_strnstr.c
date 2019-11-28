@@ -6,11 +6,15 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 09:21:26 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/10/08 20:20:43 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/27 22:04:26 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** Locate a substring in a string
+*/
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
