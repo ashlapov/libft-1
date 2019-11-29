@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 16:08:43 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/11/27 19:51:21 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/28 16:07:09 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** Check remainder
 */
 
-char			*check_rmndr(char *rmndr, char **line)
+static char			*check_rmndr(char *rmndr, char **line)
 {
 	char	*p_nl;
 	char	*tmp;
@@ -47,7 +47,7 @@ char			*check_rmndr(char *rmndr, char **line)
 ** save part of the string to remainder and write line
 */
 
-int				get_line(const int fd, char **line, char **rmndr)
+static int			get_line(const int fd, char **line, char **rmndr)
 {
 	char			buf[BUFF_SIZE + 1];
 	int				n;
@@ -80,7 +80,7 @@ int				get_line(const int fd, char **line, char **rmndr)
 ** Function creates new struct instance for linked list
 */
 
-t_fd_list		*new_list(int fd)
+static t_fd_list	*new_list(int fd)
 {
 	t_fd_list		*new;
 
@@ -97,7 +97,7 @@ t_fd_list		*new_list(int fd)
 ** We use them to to manage multiple file descriptor.
 */
 
-int				get_next_line(const int fd, char **line)
+int					ft_get_next_line(const int fd, char **line)
 {
 	static t_fd_list	*head;
 	t_fd_list			*tmp;

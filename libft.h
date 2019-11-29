@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/11/27 22:14:42 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/11/28 16:07:30 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,6 @@ char					*ft_strsub(char const *s, unsigned int start,
 char					*ft_strtrim(char const *s);
 int						ft_tolower(int c);
 int						ft_toupper(int c);
-int						get_next_line(const int fd, char **line);
+int						ft_get_next_line(const int fd, char **line);
 
 #endif
