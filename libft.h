@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/11/28 16:07:30 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/12/04 12:35:43 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ void					ft_putnbr_fd(int n, int fd);
 void					ft_putnbr(int n);
 void					ft_putstr_fd(char const *s, int fd);
 void					ft_putstr(char const *s);
+int						ft_round(double number);
 char					*ft_strcat(char *s1, const char *s2);
 char					*ft_strchr(const char *s, int c);
 void					ft_strclr(char *s);
