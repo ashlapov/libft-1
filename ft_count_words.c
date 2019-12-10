@@ -25,13 +25,13 @@ int		ft_count_words(const char *str, char c)
 	word = 0;
 	if (!str)
 		return (0);
-	while (str[i])
+	while (str[i + 1] != '\0')
 	{
 		if (str[i] == c && str[i + 1] != c)
 			word++;
 		i++;
 	}
-	if (str[0] != '\0')
+	if (str[0] != c)
 		word++;
 	return (word);
 }
