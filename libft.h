@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:18:44 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/12/04 12:35:43 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/12/10 14:27:22 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void					ft_lstdelone(t_list **alst,
 void					ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list					*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list					*ft_lstnew(void const *content, size_t content_size);
+float					ft_maxnum(float a, float b);
 void					*ft_memalloc(size_t size);
 void					*ft_memccpy(void *dst, const void *src,
 						int c, size_t n);
