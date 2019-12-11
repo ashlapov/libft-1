@@ -6,7 +6,7 @@
 /*   By: kgavrilo <kgavrilo@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 16:08:43 by kgavrilo          #+#    #+#             */
-/*   Updated: 2019/12/03 02:06:33 by kgavrilo         ###   ########.fr       */
+/*   Updated: 2019/12/11 14:13:21 by kgavrilo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,8 @@
 static char			*check_rmndr(char *rmndr, char **line)
 {
 	char	*p_nl;
-	char	*tmp;
 
 	p_nl = NULL;
-	tmp = *line;
 	if (rmndr)
 	{
 		if ((p_nl = ft_strchr(rmndr, '\n')))
@@ -36,7 +34,6 @@ static char			*check_rmndr(char *rmndr, char **line)
 			*line = ft_strdup(rmndr);
 			ft_strclr(rmndr);
 		}
-		ft_strdel(&tmp);
 	}
 	else
 		*line = ft_strnew(1);
